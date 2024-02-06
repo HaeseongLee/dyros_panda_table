@@ -1,0 +1,40 @@
+env_variables: 
+  - &SUB_TABLE_GROUND 1.16511
+  - &BASE_GROUND      1.001
+
+jiggers:
+  glass:
+    dim: [0.1, 0.04, 0.0, 1]
+    position: [0.70, 0.0, *SUB_TABLE_GROUND] 
+    orientation: [ 0.0, 0.0, 0.0]
+    color: [255, 0, 0, 1]
+
+  j1: 
+    dim: [0.1, 0.025, 0.0, 1]
+    position: [0.50, 0.30, *SUB_TABLE_GROUND] 
+    orientation: [ 0.0, 0.0, 0.0]
+    color: [255, 0, 0, 1]
+
+# demo_5020:
+#   coil:
+#     dim: [0.2, 0.25, 0.08, 1]
+#     position: [0.70, 0.00, 1.325] #(1.07 + 0.25)
+#     orientation: [ 0.0, -90.0, 0.0]
+#     color: [255, 0, 0, 1]
+#   inner:
+#     dim: [0.03, 0.1, 0]
+#     position: [1.0, 0.475, *BASE_GROUND]
+#     orientation: [0.0, 0.0, 0.0]
+#   side:
+#     dim: [0.08, 0.25, 0]
+#     position: [0.35, 0.525, 1.17]
+#     orientation: [0.0, 0.0, 0.0]
+#   table1:
+#     dim: [0.15, 0.15, 0]
+#     position: [0.35, 0.45, *BASE_GROUND]
+#     orientation: [0.0, 0.0, 0.0]
+#   table2:
+#     dim: [0.15, 0.1, 0]
+#     position: [0.60, 0.58, *BASE_GROUND]
+#     orientation: [0.0, 0.0, 0.0]
+

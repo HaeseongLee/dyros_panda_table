@@ -1,0 +1,13 @@
+<launch>
+
+  <node name="cocktail_motion_planning" pkg="dyros_panda_motion_planning" type="cocktail_motion_planning" respawn="false" output="screen">
+    <rosparam command="load" file="$(find dyros_panda_moveit_config)/config/kinematics.yaml"/>
+    <rosparam command="load" file="$(find dyros_panda_moveit_config)/config/ompl_planning.yaml"/>
+   
+    <param name="/obj_group" value="jiggers"/>
+   
+    <rosparam command="load" file="$(find dyros_panda_moveit_config)/config/objects.yaml"/>
+
+  </node>
+
+</launch>

@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: dyros_panda_table_description
+    relative_path: robots/dyros_panda_table_env.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/panda.srdf
+  CONFIG:
+    author_name: Haeseong Lee
+    author_email: lhs4138@snu.ac.kr
+    generated_timestamp: 1677221343
